@@ -10,9 +10,8 @@
 9. **git checkout _<BranchName или первые символы хеша коммита>_** - переход в указанную ветку или коммит
 10. **git checkout -b new_branch_name** - создание новой ветки и переход в неё
 11. **git branch new_branch_name** - создание новой ветки
-12. **git branch -d _<BranchName>_** удаление ветки так чтобы ничего не сломать
 13. **git branch** - просмотр списка веток
-14. **git branch -d branch_to_delete** - удаление ветки
+14. **git branch -d branch_to_delete** - удаление ветки так чтобы ничего не сломать
 15. **git merge branch_name** - Объединение указанной ветки с основной
 16. **git log --graph** - Отображение журнала веток в виде графика
 
