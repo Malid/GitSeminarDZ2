@@ -1,60 +1,60 @@
-# commandes GIT
-1. **git config --global user.name "Name"** - définissez ou modifiez le nom d'utilisateur à afficher dans git.
-2. **git config --global user.email "myemail@mail.com"** définir ou modifier l'adresse e-mail enregistrée dans git
-3. **git init** - initialisation du dépôt
-4. **git status** - vérifie l'état du dépôt
-5. **git add filname.ext** ou **git add .** - ajouter des fichiers individuels ou tous les fichiers à la zone de staging
-6. **git commit -m "Message About Commit"** - crée un commit
-7. **git log** - afficher l'historique des commits avec les modifications
-8. **git diff** - afficher les modifications avant de valider
-9. **git checkout _<BranchName ou les premiers caractères du hash de commit>_** - saute à la branche ou au commit spécifié
-10. **git checkout -b new_branch_name** - crée une nouvelle branche et bascule vers celle-ci
-11. **git branch new_branch_name** - crée une nouvelle branche
-13. **git branch** - voir la liste des branches
-14. **git branch -d branch_to_delete** - supprimer une branche sans rien casser
-15. **git merge branch_name** - Fusion de la branche spécifiée avec la branche actuelle
-16. **git log --graph** - Afficher le journal de branche sous forme de graphique
+# GIT-Befehle
+1. **git config --global user.name "Name"** - setze oder ändere den Benutzernamen, der in Git angezeigt werden soll.
+2. **git config --global user.email "myemail@mail.com"** setze oder ändere die in git gespeicherte E-Mail-Adresse
+3. **git init** - Initialisierung des Repositorys
+4. **git status** – überprüft den Status des Repositorys
+5. **git add filname.ext** oder **git add .** – fügt einzelne Dateien oder alle Dateien zum Staging-Bereich hinzu
+6. **git commit -m "Message About Commit"** - erstelle ein Commit
+7. **git log** – Zeigt den Commit-Verlauf mit Änderungen an
+8. **git diff** – Änderungen vor dem Commit anzeigen
+9. **git checkout _<BranchName oder die ersten Zeichen des Commit-Hashes>_** – Springe zum angegebenen Branch oder Commit
+10. **git checkout -b new_branch_name** – erstelle einen neuen Branch und wechsle zu ihm
+11. **git branch new_branch_name** – erstelle einen neuen Branch
+13. **git branch** – Liste der Branches anzeigen
+14. **git branch -d branch_to_delete** – Lösche einen Zweig, ohne etwas zu beschädigen
+15. **git merge branch_name** – Zusammenführen des angegebenen Zweigs mit dem aktuellen
+16. **git log --graph** – Verzweigungsprotokoll als Diagramm anzeigen
 
-*si vous créez un fichier **.gitignore** dans le référentiel et y ajoutez une liste de fichiers, tels que des images ou des fichiers volumineux, lorsque vous ajoutez le fichier **.gitignore** au référentiel, git ne les traitera pas des dossiers
+*Wenn Sie eine **.gitignore**-Datei im Repository erstellen und dort eine Liste von Dateien hinzufügen, z. B. Bilder oder große Dateien, wenn Sie die **.gitignore**-Datei zum Repository hinzufügen, verarbeitet Git diese nicht Dateien
 
-**git log -n** Afficher les n derniers commits
+**git log -n** Zeigt die letzten n Commits an
 
-**git log --since 2022-01-17 _until 2022-01-22_** affiche les commits à partir d'une date précise *jusqu'à une date précise (optionnel)*
+**git log --seit 2022-01-17 _bis 2022-01-22_** Commits von einem bestimmten Datum *bis zu einem bestimmten Datum anzeigen (optional)*
 
-**git rm _FileName_** supprime le fichier des index git
+**git rm _FileName_** Datei aus Git-Indizes entfernen
 
-**git rebase main** copie un ensemble de commits et les déplace vers un autre emplacement
+**git rebase main** kopiert eine Reihe von Commits und verschiebt sie an einen anderen Ort
 
-**git détacher HEAD** détacher HEAD de la branche pour valider
+**git trennt HEAD ab** trennt HEAD vom Branch zum Commit
 
-**git checkout main^** changer d'un niveau
+**git checkout main^** schalte eine Ebene höher
 
-**git checkout main~3** déplacer 3 commits en arrière
+**git checkout main~3** schiebe 3 Commits zurück
 
-**git branch -f main HEAD~3** force la branche principale 3 parents à revenir de HEAD
+**git branch -f main HEAD~3** zwingt die Eltern des Hauptzweigs 3 zurück von HEAD
 
 
 ***
-# Pousser le dépôt local vers le serveur GitHub
+# Pushen des lokalen Repositorys auf den GitHub-Server
 
-**git remote add origin <_WebPatch.git_>**
+**Git-Remote-Ursprung hinzufügen <_WebPatch.git_>**
 
-**branche git -M principale**
+**git branch -M main**
 
 **git push -u origin main**
 
-**git push** pousse les modifications vers GitHub (_REQUIRES AUTHORIZATION_)
+**git push** Push-Änderungen an GitHub (_REQUIRES AUTHORIZATION_)
 
-**git pull** téléchargement depuis le serveur. Tente de fusionner
+**git pull** vom Server herunterladen. Versucht zusammenzuführen
 
-**?git fetch** synchronise la branche locale avec la télécommande. Git pull appelle git fetch suivi de git merge
+**?git fetch** lokalen Branch mit Remote synchronisieren. Git pull ruft git fetch gefolgt von git merge auf
 ***
-# Requête d'extraction Git
+# Git-Pull-Request
 
-- Faire un **fork** (branche) du dépôt
-- Faites un clone git de **notre** version du dépôt
-- Créer une nouvelle branche et ** elle ** apporte nos modifications
-- Corriger les modifications (faire des commits)
-- Soumettez votre version sur votre GitHub
-- Sur le site GitHub, appuyez sur le bouton **pull request**
+- Einen **Fork** (Zweig) des Repositorys erstellen
+- Erstellen Sie einen Git-Klon von **unserer** Version des Repositorys
+- Erstellen Sie einen neuen Zweig und **er** nimmt unsere Änderungen vor
+- Änderungen beheben (Commits vornehmen)
+- Senden Sie Ihre Version an Ihren GitHub
+- Klicken Sie auf der GitHub-Website auf die Schaltfläche **Pull Request**
 ***
