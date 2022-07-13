@@ -1,5 +1,9 @@
 # GIT-Befehle
+<<<<<<< HEAD
 123
+=======
+321
+>>>>>>> german
 1. **git config --global user.name "Name"** - setze oder ändere den Benutzernamen, der in Git angezeigt werden soll.
 2. **git config --global user.email "myemail@mail.com"** setze oder ändere die in git gespeicherte E-Mail-Adresse
 3. **git init** - Initialisierung des Repositorys
