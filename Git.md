@@ -1,19 +1,19 @@
-# GIT commands
-1. **git config --global user.name "Name"** - set or change the username to display in git.
-2. **git config --global user.email "myemail@mail.com"** set or change the email address recorded in git
-3. **git init** - initialization of the repository
-4. **git status** - check the status of the repository
-5. **git add filname.ext** or **git add .** - add individual files or all files to the staging area
-6. **git commit -m "Message About Commit"** - create a commit
-7. **git log** - view commit history with changes
-8. **git diff** - view changes before commit
-9. **git checkout _<BranchName or the first characters of the commit hash>_** - jump to the specified branch or commit
-10. **git checkout -b new_branch_name** - create a new branch and switch to it
-11. **git branch new_branch_name** - create a new branch
-13. **git branch** - view list of branches
-14. **git branch -d branch_to_delete** - delete a branch without breaking anything
-15. **git merge branch_name** - Merging the specified branch with the current one
-16. **git log --graph** - Display branch log as a graph
+# Команды GIT
+1. **git config --global user.name "Name"** - задать или изменить имя пользователя для отображения в git.
+2. **git config --global user.email "myemail@mail.com"** задать или изменить адрес электронного ящика, записанные в git
+3. **git init** - инициализация репозитория
+4. **git status** - проверка статуса репозитория
+5. **git add filname.ext** или **git add .** -добавление отдельных файлов или всех файлов в область подготовленных файлов
+6. **git commit -m "Message About Commit"** - создание комиита
+7. **git log** - просмотр истории коммитов с изменениями
+8. **git diff** - просмотр изменений до коммита
+9. **git checkout _<BranchName или первые символы хеша коммита>_** - переход в указанную ветку или коммит
+10. **git checkout -b new_branch_name** - создание новой ветки и переход в неё
+11. **git branch new_branch_name** - создание новой ветки
+13. **git branch** - просмотр списка веток
+14. **git branch -d branch_to_delete** - удаление ветки так чтобы ничего не сломать
+15. **git merge branch_name** - Объединение указанной ветки с текущей
+16. **git log --graph** - Отображение журнала веток в виде графика
 
 *если в репозитории создать файл **.gitignore** и добавить туда список файлов, например картинок или больших файлов, при добавлении файла **.gitignore** в репозиторий, git не будет обрабатывать эти файлы
 
