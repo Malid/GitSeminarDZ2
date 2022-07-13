@@ -1,18 +1,18 @@
 # Команды GIT
-1. **git config --global user.name "Name"** - set or change the username to display in git.
-2. **git config --global user.email "myemail@mail.com"** set or change the email address recorded in git
-3. **git init** - repository initialization
-4. **git status** - check repository status
-5. **git add filname.ext** или **git add .** -adding individual files or all files to the staged files area
-6. **git commit -m "Message About Commit"** - creating a commit
-7. **git log** - view commit history with changes
-8. **git diff** - view changes before commit
+1. **git config --global user.name "Name"** - задать или изменить имя пользователя для отображения в git.
+2. **git config --global user.email "myemail@mail.com"** задать или изменить адрес электронного ящика, записанные в git
+3. **git init** - инициализация репозитория
+4. **git status** - проверка статуса репозитория
+5. **git add filname.ext** или **git add .** -добавление отдельных файлов или всех файлов в область подготовленных файлов
+6. **git commit -m "Message About Commit"** - создание комиита
+7. **git log** - просмотр истории коммитов с изменениями
+8. **git diff** - просмотр изменений до коммита
 9. **git checkout _<BranchName или первые символы хеша коммита>_** - переход в указанную ветку или коммит
 10. **git checkout -b new_branch_name** - создание новой ветки и переход в неё
 11. **git branch new_branch_name** - создание новой ветки
 13. **git branch** - просмотр списка веток
 14. **git branch -d branch_to_delete** - удаление ветки так чтобы ничего не сломать
-15. **git merge branch_name** - Объединение указанной ветки с основной
+15. **git merge branch_name** - Объединение указанной ветки с текущей
 16. **git log --graph** - Отображение журнала веток в виде графика
 
 *если в репозитории создать файл **.gitignore** и добавить туда список файлов, например картинок или больших файлов, при добавлении файла **.gitignore** в репозиторий, git не будет обрабатывать эти файлы
@@ -20,31 +20,3 @@
 **git log -n** Отобразить последние n коммитов
 
 **git log --since 2022-01-17 _until 2022-01-22_** отобразить коммиты с определенной даты *по определённую дату (необязательно)*
-
-**git clone _<АдресРепозитория>_** клонировать удалённый репозиторий
-
-***
-# Отправка своего репозитория git в Сеть
-**git remote add origin _WebPatch_ **
-
-**git branch -M main**
-
-**git push -u origin main**
-***
-
-**git push** отправить изменения на GitHub
-
-**git pull** загрузить с сервера (Команда автоматически делает **merge**)
-
-**git fetch** синхронизация локальной ветки с удалённой. **git pull** вызывает **git fetch** следом за **git merge**
-
-
-***
-# GIT PULL REQUEST
-
-- Делаем **fork** (ответвление) репозитория
-- Делаем **git clone** СВОЕЙ версии репозитория
-- Создаем новую ветку и в НЕЁ вносим изменения
-- Фиксируем изменения (делаем коммиты)
-- Отправляем свою версию в свой GitHub
-- На сайте GitHub нажимаем кнопку pull request
